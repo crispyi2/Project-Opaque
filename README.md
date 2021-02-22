@@ -24,3 +24,12 @@ My goal is to create an operating system that is feuled by the internet.
 
 1. FriendUP:
 [FriendOS's website](https://friendos.com/)
+
+# Installation
+
+**From Command Line**
+* first
+* second
+* third
+
+**From Gitpod**

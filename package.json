@@ -1,0 +1,25 @@
+{
+  "name": "project-opaque",
+  "version": "1.0.0",
+  "description": "Feuled by the internet",
+  "main": "Desktop.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crispyi2/Project-Opaque.git"
+  },
+  "keywords": [
+    "Operating-System"
+  ],
+  "author": "Krispiiiii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crispyi2/Project-Opaque/issues"
+  },
+  "homepage": "https://github.com/crispyi2/Project-Opaque#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
