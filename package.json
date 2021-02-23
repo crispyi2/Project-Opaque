@@ -4,7 +4,7 @@
   "description": "Feuled by the internet",
   "main": "Desktop.js",
   "scripts": {
-    "test": "npm test"
+    "start": "node Desktop.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/crispyi2/Project-Opaque#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "http-server": "^0.12.3"
   }
 }
