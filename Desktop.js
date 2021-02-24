@@ -1,7 +1,7 @@
-var express = require('express');
-var app = express();
-var path = require('path');
-var serveStatic = require('serve-static')
+const express = require('express');
+const app = express();
+const path = require('path');
+const serveStatic = require('serve-static')
 
 app.use(express.static(path.join(__dirname, "../public")));
 
