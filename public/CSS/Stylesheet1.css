@@ -2,10 +2,6 @@ body {
     background-image: url(Assets/lighting.jpg);
 }
 
-html {
-    background-image: url(Assets/lighting.jpg);
-}
-
 #framewrap {
     padding: 10px;
     background-color: #f60;
