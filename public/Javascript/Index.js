@@ -1,5 +1,0 @@
-$(function() {
-    $("#framewrap")
-        .resizable()
-        .draggable();
-});

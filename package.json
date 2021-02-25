@@ -1,32 +1,16 @@
 {
-    "name": "project-opaque",
-    "version": "1.0.0",
-    "description": "Feuled by the internet",
-    "main": "Desktop.js",
-    "scripts": {
-        "build": "npm build /",
-        "start": "node Desktop.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/crispyi2/Project-Opaque.git"
-    },
-    "keywords": [
-        "Operating-System"
-    ],
-    "author": "Krispiiiii",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/crispyi2/Project-Opaque/issues"
-    },
-    "homepage": "https://github.com/crispyi2/Project-Opaque#readme",
-    "dependencies": {
-        "express": "^4.17.1",
-        "http-server": "^0.12.3",
-        "serve-static": "^1.14.1",
-        "simple-window-manager": "^2.1.2"
-    },
-    "devDependencies": {
-        "html-webpack-plugin": "^5.2.0"
-    }
+  "name": "helloworld",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  }
 }
