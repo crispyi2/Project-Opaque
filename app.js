@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var serveIndex = require('serve-index');
+var serveStatic = require('serve-static');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -23,7 +24,7 @@ app.use(cookieParser());
 app.use('/', express.static('public'), serveIndex('public', {
     'icons': true
 }))
-app.use('/public', express.static(path.join(__dirname, '/images')));
+app.use('/static', express.static('public'))
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
