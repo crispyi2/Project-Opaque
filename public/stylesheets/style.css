@@ -39,3 +39,14 @@ iframe {
     border-bottom-left-radius: 10px;
     border-color: #d3d3d300;
 }
+
+#windowcontrolls {
+    float: right;
+}
+
+#mbutton {
+    margin-top: -17px;
+    border-radius: 10px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
