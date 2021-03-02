@@ -2,15 +2,15 @@
 
 
 ## Installation
-
-> npm upgrade
-
+```
+npm upgrade
+```
 **Update npm and its packages**
-
-> npm install
-
+```
+npm install
+```
 **Install any missing required packages**
-
-> npm run start
-
+```
+npm run start
+```
 **Profit**
