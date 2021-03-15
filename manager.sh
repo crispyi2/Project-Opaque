@@ -29,9 +29,12 @@ echo "     select the operation"
 echo "  1)Install apt dependancies"
 echo "  2)Install npm dependancies"
 echo "┕━━━━━━━━━━━ ⋆⋅☆⋅⋆ ━━━━━━━━━━━┙"
-read n
-case $n in);;
-	
+read m
+case $m in
+1) echo "Installing"
+apt list --installed 2>/dev/null | grep 'dialog' || apt install 'dialog'
+
+esac;;
   2) echo "Coming soon";;
   3) echo "coming soon";;
   4) echo "Coming soon";;
