@@ -1,3 +1,5 @@
+sudo apt-get install dialog
+
 cat << "EOF"
 
 ╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╭╮╱╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━━╮╱╱╱╱╱╭╮╱╱╱╭╮╭╮
@@ -10,5 +12,7 @@ cat << "EOF"
 ╱╱╱╱╱╱╱╱╰━╯╱╱╱╱╱╱╱╱╱╱╱╱╰╯╱╱╱╱╱╱╰╯
 EOF
 
-echo
-echo What command would you like to execute
+dialog --clear --backtitle "Backtitle here" --title "What command would you like to execute" --menu "Choose one of the following options:" 15 40 4 \
+1 "Option 1" \
+2 "Option 2" \
+3 "Option 3"
