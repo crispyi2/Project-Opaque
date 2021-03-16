@@ -184,7 +184,7 @@
 				if ($('#pages').attr('src') == 'setup-pages/page-2.html'){
 					document.getElementById('lastButton').style.display = 'block';
 				}
-			}, 1000);
+			}, 100);
 			$('#nextButton').click(function () {
 				var pages = document.getElementById('pages');
 				if ($('#pages').attr('src') == 'setup-pages/page-1.html') {
@@ -193,6 +193,17 @@
 					$('#pages').remove();
 					parent.append(newElement);
 					$('#pages').css('src', 'setup-pages/page-2.html');
+					console.log('e');
+				}
+			});
+			$('#lastButton').click(function () {
+				var pages = document.getElementById('pages');
+				if ($('#pages').attr('src') == 'setup-pages/page-2.html') {
+					var newElement = "<embed src='setup-pages/page-1.html' id='pages' width='100%' height='100%'>";
+					var parent = $('#pages').parent();
+					$('#pages').remove();
+					parent.append(newElement);
+					$('#pages').css('src', 'setup-pages/page-1.html');
 					console.log('e');
 				}
 			});

@@ -1,3 +1,42 @@
-<h1>
-	This is a second page
-</h1>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		#instructionsdiv {
+			text-align: center;
+			color: white;
+		}
+		#filechoosers {
+			position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-right: -50%;
+				transform: translate(-50%, -50%);
+		}
+		#new {
+			height: 100px;
+			width: 170px;
+			border-radius: 10px;
+		}
+		#existing {
+			height: 100px;
+			width: 170px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="instructionsdiv">
+		<h1 id="instructions">
+			Chose a folder to store your desktop in
+		</h1>
+	</div>
+	<div id="filechoosers">
+	<button id="existing">
+		Choose existing folder.
+	</button>
+	<button id="new">
+		Choose a new folder.
+	</button>
+	</div>
+</body>
