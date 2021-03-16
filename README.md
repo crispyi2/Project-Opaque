@@ -1,16 +1,40 @@
 # This repository is very unfinished the readme will be updated with it
 
 
-## Installation
+## Do everything with one bash script
 ```
-npm upgrade
+sh manager.sh
 ```
-**Update npm and its packages**
-```
-npm install
-```
+
 **Install any missing required packages**
 ```
-npm run start
+╔═══════════════════════════════════════════════════════════════════════════╗
+        ╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╭╮╱╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━━╮╱╱╱╱╱╭╮╱╱╱╭╮╭╮
+        ┃╭━╮┃╱╱╱╱╭╮╱╱╱╱╭╯╰╮┃╭━╮┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰┫┣╯╱╱╱╱╭╯╰╮╱╱┃┃┃┃
+        ┃╰━╯┣━┳━━╋╋━━┳━┻╮╭╯┃┃╱┃┣━━┳━━┳━━┳╮╭┳━━╮╱┃┃╭━╮╭━┻╮╭╋━━┫┃┃┃╭━━┳━╮
+        ┃╭━━┫╭┫╭╮┣┫┃━┫╭━┫┃╱┃┃╱┃┃╭╮┃╭╮┃╭╮┃┃┃┃┃━┫╱┃┃┃╭╮┫━━┫┃┃╭╮┃┃┃┃┃┃━┫╭╯
+        ┃┃╱╱┃┃┃╰╯┃┃┃━┫╰━┫╰╮┃╰━╯┃╰╯┃╭╮┃╰╯┃╰╯┃┃━┫╭┫┣┫┃┃┣━━┃╰┫╭╮┃╰┫╰┫┃━┫┃
+        ╰╯╱╱╰╯╰━━┫┣━━┻━━┻━╯╰━━━┫╭━┻╯╰┻━╮┣━━┻━━╯╰━━┻╯╰┻━━┻━┻╯╰┻━┻━┻━━┻╯
+        ╱╱╱╱╱╱╱╱╭╯┃╱╱╱╱╱╱╱╱╱╱╱╱┃┃╱╱╱╱╱╱┃┃
+        ╱╱╱╱╱╱╱╱╰━╯╱╱╱╱╱╱╱╱╱╱╱╱╰╯╱╱╱╱╱╱╰╯
+╚═══════════════════════════════════════════════════════════════════════════╝
+┍━━━━━━━━━ ⋆⋅☆⋅⋆ ━━━━━━━━━┑
+   select the operation
+  1) Dependancy manager
+  2)  System commands
+  3)Software Management
+  4)    Port manager
+┕━━━━━━━━━ ⋆⋅☆⋅⋆ ━━━━━━━━━┙
+
+Select the first option
 ```
+```
+┍━━━━━━━━━━━ ⋆⋅☆⋅⋆ ━━━━━━━━━━━┑
+     select the operation
+  1)Install npm dependancies
+  2)     upgrade npm
+┕━━━━━━━━━━━ ⋆⋅☆⋅⋆ ━━━━━━━━━━━┙
+then select the first option again
+```
+
 **Profit**
