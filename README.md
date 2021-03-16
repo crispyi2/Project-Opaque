@@ -38,3 +38,12 @@ then select the first option again
 ```
 
 **Profit**
+
+## If you want to help fix any spagetti code listen up
+
+**Here's how you help**
+- clone the repo
+```
+git clone https://github.com/crispyi2/Project-Opaque
+```
+- change the file to your hearts content
