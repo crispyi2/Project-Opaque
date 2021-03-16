@@ -168,9 +168,30 @@
 			// Get all pages in the document
 			var pages = document.getElementById('pages');
 			// Get the src attribute of the first one
-			var src = pages.getAttribute('src')
-			
-			console.log(src)
+			var src = pages.getAttribute('src');
+
+			console.log(src);
+
+			setInterval(function () {
+				// Get all pages in the document
+				var pages = document.getElementById('pages');
+				// Get the src attribute of the first one
+				var src = pages.getAttribute('src');
+				if (pages.src == 'setup-pages/page-1.html');
+				{
+					document.getElementById('lastButton').style.display = 'none';
+				}
+			}, 1000);
+
+			setInterval(function () {
+				// Get all pages in the document
+				var pages = document.getElementById('pages');
+				// Get the src attribute of the first one
+				var src = pages.getAttribute('src');
+				document.getElementById('nextButton').onclick = function Nextpage() {
+					console.log('e')
+				};
+			}, 1000);
 		</script>
 	</body>
 </html>
