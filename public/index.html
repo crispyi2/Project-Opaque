@@ -1,157 +1,176 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			#loaderContainer {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				min-height: 100vh;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-right: -50%;
+				transform: translate(-50%, -50%);
+				color: white;
+			}
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        #loaderContainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            min-height: 100vh;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            color: white;
-        }
+			/* Center the loader */
+			#loader {
+				z-index: 1;
+				width: 60px;
+				height: 60px;
+				border: 16px solid #505050;
+				border-radius: 50%;
+				border-top: 16px solid #480577;
+				-webkit-animation: spin 2s linear infinite;
+				animation: spin 2s linear infinite;
+			}
 
-        /* Center the loader */
-        #loader {
-            z-index: 1;
-            width: 60px;
-            height: 60px;
-            border: 16px solid #505050;
-            border-radius: 50%;
-            border-top: 16px solid #480577;
-            -webkit-animation: spin 2s linear infinite;
-            animation: spin 2s linear infinite;
-        }
+			@-webkit-keyframes spin {
+				0% {
+					-webkit-transform: rotate(0deg);
+				}
 
-        @-webkit-keyframes spin {
-            0% {
-                -webkit-transform: rotate(0deg);
-            }
+				100% {
+					-webkit-transform: rotate(360deg);
+				}
+			}
 
-            100% {
-                -webkit-transform: rotate(360deg);
-            }
-        }
+			@keyframes spin {
+				0% {
+					transform: rotate(0deg);
+				}
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
+				100% {
+					transform: rotate(360deg);
+				}
+			}
 
-            100% {
-                transform: rotate(360deg);
-            }
-        }
+			/* Add animation to "page content" */
+			.animate-bottom {
+				position: relative;
+				-webkit-animation-name: animatebottom;
+				-webkit-animation-duration: 1s;
+				animation-name: animatebottom;
+				animation-duration: 1s;
+			}
 
-        /* Add animation to "page content" */
-        .animate-bottom {
-            position: relative;
-            -webkit-animation-name: animatebottom;
-            -webkit-animation-duration: 1s;
-            animation-name: animatebottom;
-            animation-duration: 1s
-        }
+			@-webkit-keyframes animatebottom {
+				from {
+					bottom: -100px;
+					opacity: 0;
+				}
 
-        @-webkit-keyframes animatebottom {
-            from {
-                bottom: -100px;
-                opacity: 0
-            }
+				to {
+					bottom: 0px;
+					opacity: 1;
+				}
+			}
 
-            to {
-                bottom: 0px;
-                opacity: 1
-            }
-        }
+			@keyframes animatebottom {
+				from {
+					bottom: -100px;
+					opacity: 0;
+				}
 
-        @keyframes animatebottom {
-            from {
-                bottom: -100px;
-                opacity: 0
-            }
+				to {
+					bottom: 0;
+					opacity: 1;
+				}
+			}
 
-            to {
-                bottom: 0;
-                opacity: 1
-            }
-        }
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
 
-        body,
-        html {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+			/* your class for the div should have 100% height and width */
+			.myDivcontainer {
+				background-color: rgb(92, 92, 92);
+				/* you can add a color to visually test your code */
+				width: 100%;
+				height: 100%;
+				color: white;
+			}
 
-        /* your class for the div should have 100% height and width */
-        .myDivcontainer {
-            background-color: rgb(92, 92, 92);
-            /* you can add a color to visually test your code */
-            width: 100%;
-            height: 100%;
-            color: white;
-        }
+			#Wlcmheader {
+				margin: 0;
+			}
 
-        #Wlcmheader {
-            margin: 0;
-        }
+			#myDiv {
+				display: none;
+				text-align: center;
+				background-color: rgb(46, 46, 46);
+				height: 100%;
+			}
 
-        #myDiv {
-            display: none;
-            text-align: center;
-            background-color: rgb(46, 46, 46);
-            height: 100%
-        }
+			#nextButton {
+				position: absolute;
+				right: 10px;
+				bottom: 10px;
+				width: 100px;
+				height: 60px;
+				border-radius: 10px;
+			}
+			#lastButton {
+				position: absolute;
+				left: 10px;
+				bottom: 10px;
+				width: 100px;
+				height: 60px;
+				border-radius: 10px;
+			}
+			.navbuttons {
+			}
+		</style>
+	</head>
 
-        .nextButton {
-            width: 60px;
-            height: 40px;
-            border-radius: 10px;
-        }
-    </style>
-</head>
+	<body onload="myFunction()" style="margin: 0;">
+		<div id="loaderContainer">
+			<img src="/images/Logo.png" />
+			<div id="loader"></div>
+			<p>Starting</p>
+		</div>
+		<div class="myDivcontainer">
+			<div style="display: none;" id="myDiv" class="animate-bottom">
+				<embed id="pages" src="setup-pages/page-1.html" width="100%" />
+				<div id="navButtonscontainer">
+					<div class="navButtons">
+						<button id="nextButton">
+							Next
+						</button>
+						<button id="lastButton">
+							Last
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var myVar;
+			var checkPage;
 
-<body onload="myFunction()" style="margin:0;">
-    <div id="loaderContainer">
-        <img src="/images/Logo.png">
-        <div id="loader"></div>
-        <p>Starting</p>
-    </div>
-    <div class="myDivcontainer">
-        <div style="display:none;" id="myDiv" class="animate-bottom">
-            <h2 id="Wlcmheader">Welcome</h2>
-            <p>Before we start lets get you set up</p>
-            <div id="navButtonscontainer">
-                <div id="navButtons">
-                    <button class="nextButton">
-                        Next
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        var myVar;
+			function myFunction() {
+				myVar = setTimeout(showPage, 3000);
+			}
 
-        function myFunction() {
-            myVar = setTimeout(showPage, 3000);
-        }
-
-        function showPage() {
-            document.getElementById("loaderContainer").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
-
-</body>
-
+			function showPage() {
+				document.getElementById('loaderContainer').style.display = 'none';
+				document.getElementById('myDiv').style.display = 'block';
+			}
+			// Get all pages in the document
+			var pages = document.getElementById('pages');
+			// Get the src attribute of the first one
+			var src = pages.getAttribute('src')
+			
+			console.log(src)
+		</script>
+	</body>
 </html>

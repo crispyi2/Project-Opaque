@@ -24,6 +24,9 @@ app.use(cookieParser());
 app.use('/', express.static('public'), serveIndex('public', {
     'icons': true
 }))
+app.use('/', express.static('public'), serveIndex('public', {
+    'setup-pages': true
+}))
 app.use('/static', express.static('public'))
 app.use(express.static(path.join(__dirname, 'public')));
 
