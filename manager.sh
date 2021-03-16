@@ -1,3 +1,19 @@
+echo -n -e '[###                      ] [20%]\r'
+# some task
+sleep 2
+echo -n -e '[>>>>>>>                  ] [40%]\r'
+# some task
+sleep 2
+echo -n -e '>>>>>>>>>>>>>>           ] [60%]\r'
+# some task
+sleep 2
+echo -n -e '>>>>>>>>>>>>>>>>>>>>>>>  ] [80%]\r'
+# some task
+sleep 2
+echo -n -e '>>>>>>>>>>>>>>>>>>>>>>>>>] [100%]\r'
+echo -n -e '\n'
+sleep  1
+
 cat << "EOF"
 
 
