@@ -47,4 +47,4 @@ then select the first option again
 git clone https://github.com/crispyi2/Project-Opaque
 ```
 - change the file to your hearts content (please note that it must still have the same functionality as before)
-- once you are finished post the code in the Project-Opaque section in projects in the channel code-fixing
+- once you are finished post your code to the Discussions tab in category code-fixing
