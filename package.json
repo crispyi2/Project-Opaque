@@ -16,6 +16,7 @@
         "jquery": "^3.6.0",
         "morgan": "~1.9.1",
         "pug": "^2.0.0-beta11",
+        "require-all": "^3.0.0",
         "serve-index": "^1.9.1",
         "serve-static": "^1.13.2",
         "simple-window-manager": "^2.1.2"

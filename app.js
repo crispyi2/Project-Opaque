@@ -21,18 +21,11 @@ app.use(express.json());
 app.use(express.urlencoded({
     extended: false
 }));
-app.use(cookieParser());
-app.use('/', express.static('public'), serveIndex('public', {
-    'icons': true
-}))
-app.use('/', express.static('public'), serveIndex('public', {
-    'setup-pages': true
-}))
-app.use('/node_modules', express.static('node_modules'))
-app.use(express.static(path.join(__dirname, 'node_modules')));
 
-app.use('/static', express.static('public'))
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(cookieParser());
+app.use('/static', express.static('/'))
+app.use(express.static(path.join(__dirname, '/')));
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
