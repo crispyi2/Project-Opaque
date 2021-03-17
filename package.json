@@ -7,10 +7,13 @@
     },
     "dependencies": {
         "browser-fs-access": "^0.14.2",
+        "browserfs": "^1.4.3",
         "cookie-parser": "~1.4.4",
         "debug": "~2.6.9",
+        "dropbox": "^9.2.0",
         "express": "~4.16.1",
         "http-errors": "~1.6.3",
+        "jquery": "^3.6.0",
         "morgan": "~1.9.1",
         "pug": "^2.0.0-beta11",
         "serve-index": "^1.9.1",

@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var serveIndex = require('serve-index');
 var serveStatic = require('serve-static');
+var BrowserFS = require('browserfs')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -27,6 +28,9 @@ app.use('/', express.static('public'), serveIndex('public', {
 app.use('/', express.static('public'), serveIndex('public', {
     'setup-pages': true
 }))
+app.use('/node_modules', express.static('node_modules'))
+app.use(express.static(path.join(__dirname, 'node_modules')));
+
 app.use('/static', express.static('public'))
 app.use(express.static(path.join(__dirname, 'public')));
 
