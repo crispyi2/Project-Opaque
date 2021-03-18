@@ -1,4 +1,5 @@
 <head>
+    <script data-main="scripts/main.js" src="scripts/require.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<style>
 		#instructionsdiv {
@@ -31,7 +32,7 @@
 			Chose a folder to store your system in
 		</h1>
 		<div id="systemchooser">
-			<div id="systemFound">
+			<div id="systemFound" style="display: none;">
 				<h1>
 					One or more systems found!
 				</h1>
@@ -39,12 +40,12 @@
 					
 				</div>
 			</div>
-			<div id="noSystemFound">
+			<div id="noSystemFound" style="display: none;">
 				<h1>
 					No systems found click here to create a new one.
 				</h1>
 			</div>
 		</div>
 	</div>
-	<script></script>
+	<script src="/scripts/System-Checker.js" type="module"></script>
 </body>

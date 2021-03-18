@@ -1,3 +1,4 @@
+var fs = require('fs');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -6,6 +7,7 @@ var logger = require('morgan');
 var serveIndex = require('serve-index');
 var serveStatic = require('serve-static');
 var BrowserFS = require('browserfs')
+var serveIndex = require('serve-index')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

@@ -12,6 +12,8 @@
         "debug": "~2.6.9",
         "dropbox": "^9.2.0",
         "express": "~4.16.1",
+        "file-system": "^2.2.2",
+        "fs": "0.0.1-security",
         "http-errors": "~1.6.3",
         "jquery": "^3.6.0",
         "morgan": "~1.9.1",
@@ -20,5 +22,8 @@
         "serve-index": "^1.9.1",
         "serve-static": "^1.13.2",
         "simple-window-manager": "^2.1.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
     }
 }
