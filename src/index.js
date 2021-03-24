@@ -25,3 +25,5 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+const PORT = process.env.PORT || 8080;
