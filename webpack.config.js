@@ -8,12 +8,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 
-require.context(
-    "./src", // context folder
-    true, // include subdirectories
-    /.*/ // RegExp
-)("./" + expr + "")
-
 module: {
     rules: [
       {
