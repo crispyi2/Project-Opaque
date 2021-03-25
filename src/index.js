@@ -52,4 +52,5 @@ var _getAllFilesFromFolder = function(dir) {
 };
 
 
+
 document.body.appendChild(component());
