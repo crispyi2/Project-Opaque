@@ -29,6 +29,8 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "generator-code": "^1.4.5",
+    "lodash": "^4.17.21",
+    "yo": "^3.1.1"
   }
 }
