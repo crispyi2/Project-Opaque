@@ -1,0 +1,20 @@
+{
+  "name": "project-opaque",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crispyi2/Project-Opaque.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crispyi2/Project-Opaque/issues"
+  },
+  "homepage": "https://github.com/crispyi2/Project-Opaque#readme"
+}
