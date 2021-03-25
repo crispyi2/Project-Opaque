@@ -1,1 +1,1 @@
-module "https://github.com/crispyi2/Project-Opaque"
+module "github.com/crispyi2/Project-Opaque"
