@@ -1,6 +1,4 @@
-import { fs } from 'fs';
-
-const fs = require("fs")
+import * as fs from 'fs';
 
 fs.mkdir("./src", function(err) {
   if (err) {
