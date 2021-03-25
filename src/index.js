@@ -24,10 +24,4 @@ function component() {
     return element;
 }
 
-require.context(
-    "./src", // context folder
-    true, // include subdirectories
-    /.*/ // RegExp
-)("./" + expr + "")
-
 document.body.appendChild(component());
