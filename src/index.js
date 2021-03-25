@@ -1,4 +1,6 @@
 import { fs } from 'fs';
+import { readdir } from "fs/promises";
+import { join } from "path";
 import _ from 'lodash';
 import './style.css';
 import Icon from './icon.png';
@@ -24,6 +26,26 @@ function component() {
 
     return element;
 }
+
+async function* ls (path = ".")
+{ yield path
+  for (const dirent of await readdir(path, { withFileTypes: true }))
+    if (dirent.isDirectory())
+      yield* ls(join(path, dirent.name))
+    else
+      yield join(path, dirent.name)
+}
+
+async function* empty () {}
+
+async function toArray (iter = empty())
+{ let r = []
+  for await (const x of iter)
+    r.push(x)
+  return r
+}
+
+toArray(ls(".")).then(console.log, console.error)
 
 require.context(
     "/src", // context folder
