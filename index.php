@@ -13,8 +13,10 @@ while ($file = readdir($handle)&& $c<3) {
 }
 
 if ($c>2) {
-    echo 'not empty'
+	echo '<script src="jsfunctions/fullsystemfolder.js" type="module"></script>';
+    return 'not empty';
 } else {
-    echo 'empty';
+	echo '<script src="jsfunctions/emptysystemfolder.js" type="module"></script>';
+    return 'empty';
 } 
 ?>
