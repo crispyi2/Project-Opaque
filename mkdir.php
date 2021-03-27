@@ -12,19 +12,4 @@ if (!file_exists($fullPath)){
 }  
 echo $fullPath;
 
-$source = "stock/stocksystem";
-$dest= $fullPath;
-
-mkdir($dest, 0755);
-foreach (
- $iterator = new \RecursiveIteratorIterator(
-  new \RecursiveDirectoryIterator($source, \RecursiveDirectoryIterator::SKIP_DOTS),
-  \RecursiveIteratorIterator::SELF_FIRST) as $item
-) {
-  if ($item->isDir()) {
-    mkdir($dest . DIRECTORY_SEPARATOR . $iterator->getSubPathName());
-  } else {
-    copy($item, $dest . DIRECTORY_SEPARATOR . $iterator->getSubPathName());
-  }
-}
 ?>

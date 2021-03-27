@@ -1,0 +1,7 @@
+{
+    "require": {
+        "monolog/monolog": "1.0.*",
+        "symfony/finder": "^5.2",
+        "symfony/filesystem": "^5.2"
+    }
+}
