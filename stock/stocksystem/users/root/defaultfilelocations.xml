@@ -1,0 +1,42 @@
+<location>
+    <foldername>Documents</foldername>
+    <filetypes>
+        <file>.pptx</file>
+        <file>.docx</file>
+        <file>.txt</file>
+        <file>.ppt</file>
+    </filetypes>
+</location>
+<location>
+    <foldername>Music</foldername>
+    <filetypes>
+        <file>.wav</file>
+        <file>.mp3</file>
+    </filetypes>
+</location>
+<location>
+    <foldername>Pictures</foldername>
+    <filetypes>
+        <file>.jpg</file>
+        <file>.png</file>
+        <file>.svg</file>
+    </filetypes>
+</location>
+<location>
+	<foldername>Downloads</foldername>
+	<filetypes>
+		<file>.zip</file>
+		<file>.7z</file>
+		<file>.rar</file>
+		<file>.tar</file>
+		<file>.tar.xz</file>
+		<file>.tar.gz</file>
+	</filetypes>
+</location>
+<location>
+	<foldername>Videos</foldername>
+	<filetypes>
+		<file>.mp4</file>
+		<file>.mov</file>
+	</filetypes>
+</location>

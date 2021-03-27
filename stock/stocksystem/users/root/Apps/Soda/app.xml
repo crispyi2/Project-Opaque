@@ -1,0 +1,17 @@
+<identification>
+	<appname>soda</appname>
+	<apptype>
+		<type>terminalapp</type>
+		<command>
+			<terminal>
+				<id>soda</id>
+				<syntax>
+					<argument>
+						<full>--build</full>
+						<short>-b</short>
+					</argument>
+				</syntax>
+			</terminal>
+		</command>
+	</apptype>
+</identification>

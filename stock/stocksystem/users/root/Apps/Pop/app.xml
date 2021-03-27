@@ -1,0 +1,21 @@
+<identification>
+	<appname>pop</appname>
+	<apptype>
+		<type>terminalapp</type>
+		<command>
+			<terminal>
+				<id>pop</id>
+				<syntax>
+					<argument>
+						<full>--install</full>
+						<short>-i</short>
+					</argument>
+					<argument>
+						<full>--database</full>
+						<short>-d</short>
+					</argument>
+				</syntax>
+			</terminal>
+		</command>
+	</apptype>
+</identification>

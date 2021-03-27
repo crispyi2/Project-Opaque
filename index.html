@@ -3,6 +3,19 @@
     <head>
         <meta charset="utf-8" />
         <title>Getting Started</title>
+        <style>
+            #welcome {
+                text-align: center;
+            }
+
+            #empty {
+                text-align: center;
+            }
+
+            #notempty {
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <script
@@ -10,18 +23,25 @@
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"
         ></script>
-        <h1>
+        <h1 id="welcome">
             Welcome
         </h1>
-		<div id="empty" style="display: none;">
-			<h1>
-				there were no systems found in the systems folder.
-			</h1>
-		</div>
-		<div id="notempty" style="display: none;">
-			<h1>
-				Systems found select the one you want to use
-			</h1>
-		</div>
+        <div id="empty" style="display: none;">
+            <h1>
+                there were no systems found in the systems folder. type what you want your system to
+                be named click the button below to create one
+            </h1>
+            <div>
+                <form action="mkdir.php" method="post">
+                    <input type="text" name="foldername" id="foldername" value="FolderName" />
+                    <input type="submit" value="submit" />
+                </form>
+            </div>
+        </div>
+        <div id="notempty" style="display: none;">
+            <h1>
+                Systems found select the one you want to use.
+            </h1>
+        </div>
     </body>
 </html>
